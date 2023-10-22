@@ -1,0 +1,349 @@
+:root {
+    --clr-primary-Very-Dark-Blue: hsl(243, 87%, 12%);
+    --clr-primary-Desaturated-Blue: hsl(238, 22%, 44%);
+    
+    --clr-accent-Bright-Blue: hsl(224, 93%, 58%);
+    --clr-accent-Moderate-Cyan: hsl(170, 45%, 43%);
+
+    --clr-neutral-Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --clr-neutral-Light-Gray: hsl(0, 0%, 75%);
+
+    --fs-paragraph: 16px;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --ff-Raleway: 'Raleway', sans-serif;
+    --ff-OpenSans: 'Open Sans', sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* My CSS */
+
+body {
+    font-family: var(--ff-OpenSans);
+    height: 100vh;
+}
+
+nav {
+    height: 60px;
+}
+
+.nav__container {
+    max-width: 90%; height: 100%;
+    padding-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav__logo {
+  width: 110px;
+}
+
+.nav_links-div{
+  display: flex;
+  gap: 18px;
+}
+
+.nav_links {
+  text-decoration: none;
+  font-family: var(--ff-Raleway);
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
+.hero__section {
+  margin: 40px 0px;
+}
+
+section {
+  border: solid 2px red;
+}
+
+.hero__container {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.hero__image {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: var(--fw-bold);
+  margin-bottom: 20px;
+}
+
+.hero__paragraph {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  height: 45px;
+  padding: 10px 10px 10px 15px;
+  border-radius: 4px;
+  border: solid 0.1px;
+}
+
+#submit {
+  color: white;
+  background-color: var(--clr-accent-Bright-Blue);
+  border: none;
+}
+
+.section2 {
+  margin-bottom: 80px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.container2 {
+    max-width: 90%;
+    margin: auto;
+}
+
+.container2__img {
+  margin-bottom: 60px;
+}
+
+h3 {
+  text-align: center;
+  font-family: var(--ff-Raleway);
+  font-weight: var(--fw-bold);
+  margin-bottom: 25px;
+}
+
+.container2__para {
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.arrow__holder {
+  display: flex;
+  justify-content: center;
+  height: 38px;
+  color: var(--clr-accent-Moderate-Cyan);
+}
+
+.arrow__holder2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-bottom: solid 1px; border-color: var(--clr-accent-Moderate-Cyan);
+}
+
+.arrow__paragraph {
+  font-size: 14.8px;
+}
+
+.arrow__img {
+   margin-top: 3px;
+}
+
+.card__holder {
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 10px 25px 20px;
+  max-width: 85%;
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px -10px currentColor;
+}
+
+.card__paragraph {
+  font-family: var(--ff-Raleway);
+  font-weight: var(--fw-bold);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.Kyle__holder {
+  margin-top: 20px;
+  display: flex;
+  gap: 9px;
+
+  font-family: var(--ff-Raleway);
+  font-weight: var(--fw-bold);
+}
+
+.Kyle__img {
+  border-radius: 200px;
+  margin-top: 2px;
+}
+
+.Kyle__readings {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0px;
+}
+
+.Kyle__paragraph {
+  font-size: 9px;
+}
+
+.section3 {
+  background-color: var(--clr-primary-Desaturated-Blue);
+  color: white;
+  height: 420px;
+  padding-top: 30px;
+}
+
+.container3 {
+  max-width: 90%;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.container3 > h2 {
+  font-family: var(--ff-Raleway);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.container3 > p {
+  color: rgba(255, 255, 255, 0.822);
+  margin-bottom: 25px;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form2 input {
+  margin: auto;
+  width: 80%;
+}
+
+footer {
+  background-color: var(--clr-primary-Very-Dark-Blue);
+  color: rgba(255, 255, 255, 0.767);
+  padding: 40px 0px 0px 18px;
+}
+
+.footer__container {
+  display: grid;
+  gap: 40px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.footer__column1 {
+  display: grid;
+  gap: 18px;
+}
+
+.footer__column1 > img {
+  margin-bottom: 16px;
+}
+
+.footer__sub-column1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__column2 {
+  display: grid;
+  gap: 10px;
+}
+
+.footer__column3 {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+/*
+@media screen and (min-width: 768px) {
+  .hero__container {
+    display: grid;
+    grid-template-areas:
+     'one two'
+     'three two';
+  }
+
+  .hero__readings {
+    grid-area: one;
+
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-right: 60px;
+    border: solid 2px red;
+    margin-bottom: 0px;
+  }
+
+  .hero__image {
+    grid-area: two;
+  }
+
+  .form {
+    grid-area: three;
+    display: flex;
+    flex-direction: row;
+  }
+}
+*/
