@@ -104,10 +104,6 @@ nav {
   margin: 40px 0px;
 }
 
-section {
-  border: solid 2px red;
-}
-
 .hero__container {
   max-width: 90%;
   margin: auto;
